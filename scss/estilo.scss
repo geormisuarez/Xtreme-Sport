@@ -1,0 +1,26 @@
+$claro:#A2BCE0;
+$oscuro:#0B5563;
+$blanco:#fcfefe;
+$medio: #5299D3;
+*{
+    margin: 0;
+    padding: 0;
+}
+.container { 
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.20fr 1.5fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    gap: 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "nav-y-form main"
+      "footer footer";
+    @import "header";
+    @import "nav-y-form";
+    @import "main";
+    @import "footer";   
+}
+
+@import "querries";

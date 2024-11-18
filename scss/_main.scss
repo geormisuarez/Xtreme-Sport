@@ -1,0 +1,44 @@
+.main{
+    grid-area: main;
+    background-color:$oscuro;
+     display: flex;
+    flex-direction: column;
+    h2, h3{
+        font-family: "Protest Strike", sans-serif;
+        font-weight: 400;
+         font-style: normal;
+        text-align: center;
+        padding: 10px;
+        color: $blanco;
+    }
+    p{
+        padding: 10px;
+        line-height: 1.5;
+        font-size: 1.2rem;
+        color: $blanco;
+        text-align: center;
+    }
+    .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .img_gral{
+            width: 200px; 
+            height: 200px;
+            border-radius: 20px;
+            margin: 20px;
+            
+        }
+    }
+    .video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        iframe{
+            width: 480px; 
+            height: 360px;
+        }
+
+    }
+}

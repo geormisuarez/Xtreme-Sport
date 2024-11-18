@@ -1,0 +1,45 @@
+.nav-y-form{
+    grid-area: nav-y-form;
+    background-color: $medio;
+    .nav{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: header_nav;
+        .nav_menu{
+            padding: 0px;
+            margin: 0px;
+            list-style-type: none;
+            display: flex; 
+            flex-direction: column;
+            gap: 10px;
+            .nav_link{
+                color:rgb(13, 13, 13);
+                text-decoration: none;
+                padding: 0.7rem;
+                transition: all 1s;
+            }
+            .nav_link:hover{
+                background-color: #5E5C6C;
+                color: $blanco;
+                border-radius: 20px;
+            }   
+        }
+    }
+    .text-center{
+        font-family: "Protest Strike", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        padding: 10px;
+        color:$blanco;
+    }
+    .form{
+        padding: 10px;
+        width: 200px;
+        margin:20px auto;
+        border: #0B5563 solid;
+        border-radius: 20px;
+    }
+}

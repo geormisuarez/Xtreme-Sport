@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h2, h3{
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.container { 
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.20fr 1.5fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    gap: 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "nav-y-from main"
+      "footer footer";
+}
+  
+.header { 
+    grid-area: header;
+    background-color: #A2BCE0;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.header_titulo{
+    color: rgb(35, 35, 96);
+    grid-area: header_titulo;
+}
+.header_logo{
+    width: 60px;
+    grid-area: header_logo;
+    background-color: black;
+  
+}
+.header_logo_img{
+    width: 100%;    
+    height: 100%;  
+    border-radius: 20px;
+}
+  
+.nav-y-from { 
+    grid-area: nav-y-from;
+    background-color: #5299D3;
+
+ }
+  
+.nav{ 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header_nav;
+}
+.nav_menu{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+}
+.nav_link{
+    color:black;
+    text-decoration: none;
+    padding: 0.7rem;
+    
+}
+.nav_link:hover{
+    background-color: #5E5C6C;
+    color:white;
+    border-radius: 20px;
+}
+.form{
+    padding: 10px;
+    width: 200px;
+    margin:20px auto;
+    border: #0B5563 solid;
+    border-radius: 20px;
+
+}
+.main {
+     grid-area: main;
+     background-color:#0B5563;
+     display: flex;
+     flex-direction: column;
+    
+
+}
+p{
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+.img_gral{
+    width: 200px; 
+    height: 200px;
+    border-radius: 20px;
+    margin: 20px;
+}
+   
+
+.footer {
+    grid-area: footer;
+    background-color: #A2BCE0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    width: 480px; 
+    height: 360px;
+}
+
+@media screen and (max-width:768px){
+    .container{
+        
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+         "header"
+         "nav-y-from"
+         "main" 
+         "footer";
+    }
+    .nav_menu{
+        display: flex;
+        flex-direction: row;
+    }
+    .img{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:480px){
+    .header{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .nav_menu{
+        display: flex;
+        flex-direction: column;
+    }
+    iframe{
+        width: 200px; 
+        height: 150px;
+    }
+}   
+
+  
