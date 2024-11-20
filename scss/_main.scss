@@ -1,8 +1,9 @@
 .main{
     grid-area: main;
     background-color:$oscuro;
-     display: flex;
+    display: flex;
     flex-direction: column;
+    padding: 25px;
     h2, h3{
         font-family: "Protest Strike", sans-serif;
         font-weight: 400;
@@ -24,13 +25,32 @@
         align-items: center;
         
         .img_gral{
-            width: 200px; 
+            width: 200px;
             height: 200px;
             border-radius: 20px;
             margin: 20px;
             
         }
     }
+    .card-gral{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 20px;
+        .card{
+            img{
+                width: 200px;
+                height: 200px;
+
+            }
+            .card-text{
+                color: black;
+            } 
+        }
+        
+    }
+    
     .video{
         display: flex;
         justify-content: center;

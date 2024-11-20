@@ -1,6 +1,6 @@
 .footer {
     grid-area: footer;
-    background-color: $claro;
+    background-image: radial-gradient(circle, $claro, $oscuro);
     display: flex;
     flex-direction: column;
     text-align: center;

@@ -14,28 +14,13 @@
 }
 .container .header {
   grid-area: header;
-  background-color: #A2BCE0;
+  background-image: linear-gradient(to right, #A2BCE0, #0B5563);
   display: flex;
   flex-direction: column-reverse;
 }
 .container .header .header_titulo {
   color: rgb(3, 3, 116);
   grid-area: header_titulo;
-  animation-duration: 3s;
-  animation-name: titulo;
-  animation-iteration-count: infinite;
-}
-@keyframes titulo {
-  0% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    color: rgb(10, 10, 10);
-  }
 }
 .container .header .header_logo {
   width: 60px;
@@ -84,6 +69,21 @@
   text-align: center;
   padding: 10px;
   color: #fcfefe;
+  animation-duration: 3s;
+  animation-name: titulo;
+  animation-iteration-count: infinite;
+}
+@keyframes titulo {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    color: rgb(205, 8, 8);
+  }
 }
 .container .nav-y-form .form {
   padding: 10px;
@@ -97,6 +97,7 @@
   background-color: #0B5563;
   display: flex;
   flex-direction: column;
+  padding: 25px;
 }
 .container .main h2, .container .main h3 {
   font-family: "Protest Strike", sans-serif;
@@ -124,6 +125,20 @@
   border-radius: 20px;
   margin: 20px;
 }
+.container .main .card-gral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+}
+.container .main .card-gral .card img {
+  width: 200px;
+  height: 200px;
+}
+.container .main .card-gral .card .card-text {
+  color: black;
+}
 .container .main .video {
   display: flex;
   justify-content: center;
@@ -135,7 +150,7 @@
 }
 .container .footer {
   grid-area: footer;
-  background-color: #A2BCE0;
+  background-image: radial-gradient(circle, #A2BCE0, #0B5563);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -153,6 +168,10 @@
     flex-direction: row;
   }
   .img {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-gral {
     display: flex;
     flex-direction: column;
   }

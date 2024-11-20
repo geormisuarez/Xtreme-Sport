@@ -1,26 +1,11 @@
 .header{
     grid-area: header;
-    background-color: $claro;
+    background-image: linear-gradient(to right, $claro, $oscuro);
     display: flex;
     flex-direction: column-reverse;
     .header_titulo{
         color: rgb(3, 3, 116);
         grid-area: header_titulo;
-        animation-duration: 3s;
-        animation-name: titulo;
-        animation-iteration-count: infinite;
-    }
-    @keyframes titulo{
-       0%{
-        opacity:0.5;
-       }
-       50%{
-        opacity:1;
-       }
-       100%{
-        opacity:0;
-        color: rgb(10, 10, 10);
-       }
     }
 
     
