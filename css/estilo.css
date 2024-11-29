@@ -17,6 +17,7 @@
   background-image: linear-gradient(to right, #A2BCE0, #0B5563);
   display: flex;
   flex-direction: column-reverse;
+  padding: 10px;
 }
 .container .header .header_titulo {
   color: rgb(3, 3, 116);
@@ -37,7 +38,7 @@
   background-color: #5299D3;
 }
 .container .nav-y-form .nav {
-  padding: 10px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +50,7 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 .container .nav-y-form .nav .nav_menu .nav_link {
   color: rgb(13, 13, 13);
@@ -88,7 +89,7 @@
 .container .nav-y-form .form {
   padding: 10px;
   width: 200px;
-  margin: 20px auto;
+  margin: 20px;
   border: #0B5563 solid;
   border-radius: 20px;
 }
@@ -151,9 +152,17 @@
 .container .footer {
   grid-area: footer;
   background-image: radial-gradient(circle, #A2BCE0, #0B5563);
+}
+.container .footer .iconos {
+  padding: 20px;
+  gap: 20px;
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.container .footer .iconos .redes {
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (max-width: 768px) {

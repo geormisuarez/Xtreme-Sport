@@ -3,6 +3,7 @@
     background-image: linear-gradient(to right, $claro, $oscuro);
     display: flex;
     flex-direction: column-reverse;
+    padding: 10px;
     .header_titulo{
         color: rgb(3, 3, 116);
         grid-area: header_titulo;

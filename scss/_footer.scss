@@ -1,8 +1,17 @@
 .footer {
     grid-area: footer;
     background-image: radial-gradient(circle, $claro, $oscuro);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    
+    .iconos{
+        padding: 20px;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .redes{
+            width: 50px;
+            height: 50px;
+            
+        }
+    }
 }
