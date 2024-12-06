@@ -1,31 +1,32 @@
 
     @media screen and (max-width:768px){
-        .container{
+        .container-page{
             
             width: 100%;
             grid-template-columns: 1fr;
             grid-template-rows: auto auto auto auto;
             grid-template-areas: 
-             "header"
-             "nav-y-form"
-             "main" 
-             "footer";
+            "header"
+            "nav-y-form"
+            "main" 
+            "footer";
         }
+        
         .nav-form{
+            display: flex;
             flex-direction: row;
         }
         
         .img{
-            
+            display: flex;
             flex-direction: column;
         }
         .card-gral{
-            
+            display: flex;
             flex-direction: column;
-        }
-        
-        
+        }    
     }
+
     @media screen and (max-width:480px){
         .header{
         justify-content: center;
